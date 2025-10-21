@@ -58,6 +58,6 @@ Follow these steps to run the app locally 👇
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/mark-it-make-it.git
+git clone https://github.com/saiashish611999/mark-it-make-it.git
 cd mark-it-make-it
 ```
