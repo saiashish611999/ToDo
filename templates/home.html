@@ -60,7 +60,17 @@
           <!-- List of all the tasks that have completed -->
           {% for completed_task in completed_tasks %}
           <div class="card m-1">
-            <div class="card-body">{{completed_task.task}}</div>
+            <div class="card-body">
+              {{completed_task.task}}<span
+                style="position: relative; float: right"
+              >
+                <a
+                  class="btn btn-warning"
+                  href="{% url 'mark_as_undone' completed_task.pk %}"
+                  ><i class="fa fa-times"></i> Mark as Undone</a
+                >
+              </span>
+            </div>
           </div>
           {% endfor %}
         </div>
