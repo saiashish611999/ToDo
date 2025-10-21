@@ -41,9 +41,11 @@
           {% for task in tasks %}
           <div class="card m-1">
             <div class="card-body">
-              {{task.task}}
+              {{task.task}} - pk = {{task.pk}}
               <span style="position: relative; float: right">
-                <a class="btn btn-success"
+                <a
+                  class="btn btn-success"
+                  href="{% url 'mark_as_done' task.pk %}"
                   ><i class="fa fa-check"></i> Mark as Done</a
                 >
                 <a class="btn btn-danger"><i class="fa fa-trash"></i></a>
